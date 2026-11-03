@@ -11,10 +11,6 @@ int main(void)
     {
         printf("Error");
     }
-    else if (n ==0)
-    {
-        printf("NO");
-    }
     else
     {
         if (n % 3 == 0)
