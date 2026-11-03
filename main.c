@@ -11,7 +11,7 @@ int main(void)
     {
         printf("Error");
     }
-    else if (n ==O)
+    else if (n ==0)
     {
         printf("NO");
     }
@@ -25,7 +25,7 @@ int main(void)
 
         if (n % 5 ==0)
         {
-            printf("Go")
+            printf("Go");
                 printed = 1;
         }
 
