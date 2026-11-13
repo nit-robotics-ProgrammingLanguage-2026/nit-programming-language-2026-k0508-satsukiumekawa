@@ -3,9 +3,10 @@
 int main(void)
 {
     int n;
-    int printed = 0;
-
-    scanf("%d", &n);
+    if (scanf("%d", &n) != 1)
+    {
+        return 1;
+    }
 
     if (n < 0)
     {
@@ -15,30 +16,21 @@ int main(void)
     {
         printf("No");
     }
+    else if (n % 3 == 0)
+    {
+        printf("Up");
+    }
+    else if (n % 5 == 0)
+    {
+        printf("Go");
+    }
+    else if (n % 7 == 0)
+    {
+        printf("!!");
+    }
     else
     {
-        if (n % 3 == 0)
-        {
-            printf("Up");
-            printed = 1;
-        }
-
-        if (n % 5 == 0)
-        {
-            printf("Go");
-            printed = 1;
-        }
-
-        if (n % 7 == 0)
-        {
-            printf("!!");
-            printed = 1;
-        }
-
-        if (printed == 0)
-        {
-            printf("No");
-        }
+        printf("No");
     }
 
     return 0;
